@@ -1,2 +1,2 @@
-# NetfilxCloneApp
-İstanbul Medipol Üniversitesi İleri Android Dersi Final Ödevi
+## Medipol Üniversitesi Final Projesi
+Bu proje ileri android dersi için hazırlanmıştır. 
