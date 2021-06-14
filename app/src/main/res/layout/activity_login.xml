@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ui.login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/login_screen_netflix_size"
+        android:layout_height="@dimen/login_screen_netflix_size"
+        android:layout_marginStart="@dimen/login_screen_netflix_margin"
+        android:layout_marginLeft="@dimen/login_screen_netflix_margin"
+        android:layout_marginTop="@dimen/login_screen_netflix_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/netflix" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="@dimen/login_screen_netflix_logo_size"
+        android:layout_height="@dimen/login_screen_netflix_logo_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/login_margin"
+        android:layout_marginLeft="@dimen/login_margin"
+        android:layout_marginTop="@dimen/login_margin"
+        android:layout_marginEnd="@dimen/login_margin"
+        android:layout_marginRight="@dimen/login_margin"
+        android:background="@drawable/rounded_edit_text_background"
+        android:orientation="horizontal"
+        android:padding="@dimen/login_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_grey"
+            android:hint="@string/login_user_name"
+            android:padding="@dimen/login_padding"
+            android:textColor="@color/white"
+            android:textColorHint="@color/light_grey"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/login_margin"
+        android:layout_marginLeft="@dimen/login_margin"
+        android:layout_marginTop="@dimen/login_margin"
+        android:layout_marginEnd="@dimen/login_margin"
+        android:layout_marginRight="@dimen/login_margin"
+        android:background="@drawable/rounded_edit_text_background"
+        android:orientation="horizontal"
+        android:padding="@dimen/login_padding"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:passwordToggleEnabled="true"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_grey"
+            android:hint="@string/login_password"
+            android:inputType="textPassword"
+            android:padding="@dimen/login_padding"
+            android:textColor="@color/white"
+            android:textColorHint="@color/light_grey" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnrLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/login_margin"
+        android:layout_marginLeft="@dimen/login_margin"
+        android:layout_marginTop="@dimen/login_button_margin_top"
+        android:layout_marginEnd="@dimen/login_margin"
+        android:layout_marginRight="@dimen/login_margin"
+        android:background="@drawable/rounded_login_button"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/login_button_padding"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/login_button"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/login_margin"></TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_margin"
+        android:text="@string/login_help"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lnrLogin" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_margin"
+        android:text="@string/login_register"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_screen_netflix_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_margin"
+        android:gravity="center"
+        android:text="@string/login_footer"
+        android:textColor="@color/light_grey"
+        android:textSize="@dimen/login_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

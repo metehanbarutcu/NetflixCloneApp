@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ui.detail.DetailActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="@dimen/login_screen_netflix_size"
+                android:layout_height="@dimen/login_screen_netflix_size"
+                android:layout_marginStart="@dimen/login_screen_netflix_margin"
+                android:layout_marginTop="@dimen/login_screen_netflix_margin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/txtFilmName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/login_screen_netflix_margin"
+                android:layout_marginTop="@dimen/films_screen_title_margin"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_margin"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageView6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgFilmBanner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/detail_banner_size"
+                android:layout_marginTop="@dimen/login_screen_netflix_margin"
+                android:src="@drawable/netflix"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+            <TextView
+                android:id="@+id/txtFilmName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/login_screen_netflix_margin"
+                android:layout_marginTop="@dimen/login_margin"
+                android:text="@string/imdb"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_screen_netflix_margin"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgFilmBanner" />
+
+            <TextView
+                android:id="@+id/txtImdb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/login_screen_netflix_margin"
+                android:textColor="@color/detail_grey"
+                android:textSize="@dimen/login_screen_netflix_margin"
+                app:layout_constraintStart_toEndOf="@+id/txtFilmName2"
+                app:layout_constraintTop_toTopOf="@+id/txtFilmName2" />
+
+            <TextView
+                android:id="@+id/txtDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/login_screen_netflix_margin"
+                android:textColor="@color/detail_grey"
+                android:textSize="@dimen/duration_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txtImdb" />
+
+            <TextView
+                android:id="@+id/txtFilmName5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/login_screen_netflix_margin"
+                android:text="@string/release_date"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_screen_netflix_margin"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/txtFilmName2"
+                app:layout_constraintTop_toBottomOf="@+id/txtFilmName2" />
+
+            <TextView
+                android:id="@+id/txtReleaseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/login_screen_netflix_margin"
+                android:textColor="@color/detail_grey"
+                android:textSize="@dimen/login_screen_netflix_margin"
+                app:layout_constraintStart_toEndOf="@+id/txtFilmName5"
+                app:layout_constraintTop_toTopOf="@+id/txtFilmName5" />
+
+            <TextView
+                android:id="@+id/txtFilmName6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/login_padding"
+                android:text="@string/director"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_screen_netflix_margin"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/txtFilmName2"
+                app:layout_constraintTop_toBottomOf="@+id/txtFilmName5" />
+
+            <TextView
+                android:id="@+id/txtDirector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/login_screen_netflix_margin"
+                android:textColor="@color/detail_grey"
+                android:textSize="@dimen/login_screen_netflix_margin"
+                app:layout_constraintStart_toEndOf="@+id/txtFilmName6"
+                app:layout_constraintTop_toTopOf="@+id/txtFilmName6" />
+
+            <TextView
+                android:id="@+id/txtFilmName7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/login_padding"
+                android:text="@string/type"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_screen_netflix_margin"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/txtFilmName6"
+                app:layout_constraintTop_toBottomOf="@+id/txtFilmName6" />
+
+            <TextView
+                android:id="@+id/txtFilmType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/login_screen_netflix_margin"
+                android:textColor="@color/detail_grey"
+                android:textSize="@dimen/login_screen_netflix_margin"
+                app:layout_constraintStart_toEndOf="@+id/txtFilmName7"
+                app:layout_constraintTop_toTopOf="@+id/txtFilmName7" />
+
+            <TextView
+                android:id="@+id/txtFilmName8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/login_padding"
+                android:text="@string/country"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_screen_netflix_margin"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/txtFilmName6"
+                app:layout_constraintTop_toBottomOf="@+id/txtFilmName7" />
+
+            <TextView
+                android:id="@+id/txtCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/login_screen_netflix_margin"
+                android:textColor="@color/detail_grey"
+                android:textSize="@dimen/login_screen_netflix_margin"
+                app:layout_constraintStart_toEndOf="@+id/txtFilmName8"
+                app:layout_constraintTop_toTopOf="@+id/txtFilmName8" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/login_screen_netflix_margin"
+                android:text="@string/plot"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_margin"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/txtFilmName8"
+                app:layout_constraintTop_toBottomOf="@+id/txtCountry" />
+
+            <TextView
+                android:id="@+id/txtPlot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/login_screen_netflix_margin"
+                android:layout_marginTop="@dimen/login_padding"
+                android:layout_marginEnd="@dimen/login_screen_netflix_margin"
+                android:textColor="@color/detail_grey"
+                android:textSize="@dimen/login_screen_netflix_margin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

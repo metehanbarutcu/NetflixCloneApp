@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">H5190019_ibrahim_metehan_barutcu_final_proje</string>
+
+    //login
+    <string name="wrong_login">Email veya parola hatalı!</string>
+    <string name="empty_control">Bu alan boş bırakılamaz!</string>
+    <string name="login_user_name">E-posta veya telefon numarası</string>
+    <string name="login_password">Parola</string>
+    <string name="login_button">Oturum Aç</string>
+    <string name="login_help">Yardım ister misiniz?</string>
+    <string name="login_register">Netflixe katılmak ister misiniz? Şimdi kaydol.</string>
+    <string name="login_footer">Oturum açma işlemi, robot olmadığınızı kanıtlamak için Google reCAPTCHA ile korunuyor. Daha fazla bilgi alın.</string>
+
+    //splash
+    <string name="internet_alert_title">İnternet Bağlantınız Yok</string>
+    <string name="internet_app">Uygulamayı kullanmak için internete bağlayın.</string>
+    <string name="close_app">Kapat</string>
+    <string name="open_internet">İnterneti Aç</string>
+
+    //category
+    <string name="tv_shows">TV Shows</string>
+    <string name="movies">Movies</string>
+    <string name="my_list">My List</string>
+
+    //category filter
+    <string name="pls_wait">Lütfen Bekleyiniz..</string>
+    <string name="pick">Sıralama Türünü Seçiniz</string>
+    <string name="sort_by">İsme Göre Artan (A-Z)</string>
+    <string name="sort_by_descending">İsme Göre Azalan (Z-A)</string>
+    <string name="sort_by_Imdb">Imdb puanına Göre Artan (0-10)</string>
+    <string name="sort_by_descending_Imdb">Imdb puanına Göre Azalan (10-0)</string>
+
+    //films
+    <string name="films_screen_result">Films and TV Shows</string>
+    <string name="sort_result">Sırala</string>
+    <string name="grid">Grid</string>
+
+    //detail
+    <string name="imdb">Imdb:</string>
+    <string name="release_date">Çıkış tarihi:</string>
+    <string name="director">Yönetmen:</string>
+    <string name="type">Tür:</string>
+    <string name="country">Ülke:</string>
+    <string name="plot">Özet</string>
+
+    //category onBackPressed
+    <string name="exit_title">Çıkış</string>
+    <string name="exit_yes">Evet</string>
+    <string name="exit_no">Hayır</string>
+    <string name="exit_app">Uygulamadan Çıkılsın Mı?</string>
+
+</resources>

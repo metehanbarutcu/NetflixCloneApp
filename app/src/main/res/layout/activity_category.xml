@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ui.category.CategoryActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="@dimen/login_screen_netflix_size"
+        android:layout_height="@dimen/login_screen_netflix_size"
+        android:layout_marginStart="@dimen/login_screen_netflix_margin"
+        android:layout_marginTop="@dimen/login_screen_netflix_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <SearchView
+        android:id="@+id/serachView"
+        android:layout_width="@dimen/splash_screen_netflix_size"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_button_margin_top"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/category_screen_margin"
+        android:layout_marginTop="@dimen/login_screen_netflix_margin"
+        android:text="@string/tv_shows"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/login_screen_netflix_margin"
+        android:text="@string/movies"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_margin"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/login_screen_netflix_margin"
+        android:text="@string/my_list"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_margin"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvCategories"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/autofill_size"
+        android:layout_marginTop="@dimen/login_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:listitem="@layout/cardview_category" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
