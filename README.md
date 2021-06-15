@@ -3,20 +3,20 @@ Bu proje ileri android dersi için hazırlanmıştır ve NetflixClone uygulamas�
 ## Logo
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/metehanbarutcu/NetfilxCloneApp/main/Screens/logo.png" height = "250"/>
+  <img src="https://raw.githubusercontent.com/metehanbarutcu/NetfilxCloneApp/main/Screens/logo.png" height = "150"/>
 </p>
 
 ## Ekran Kaydı Gif
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/metehanbarutcu/NetfilxCloneApp/main/Screens/GIF-210615_204032.gif" height = "250"/>
+  <img src="https://raw.githubusercontent.com/metehanbarutcu/NetfilxCloneApp/main/Screens/GIF-210615_204032.gif" height = "400"/>
 </p>
 
 ## Mimari Paket Yapısı
 Bu projede mvvm mimarisi kullanılmıştır.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/metehanbarutcu/NetfilxCloneApp/main/Screens/mvvm.PNG" height = "250"/>
+  <img src="https://raw.githubusercontent.com/metehanbarutcu/NetfilxCloneApp/main/Screens/mvvm.PNG" height = "300"/>
 </p>
 
 ## Kullanılan Teknolojiler
@@ -31,7 +31,6 @@ Bu projede mvvm mimarisi kullanılmıştır.
 <li><a href="https://developer.android.com/topic/libraries/architecture/coroutines">Coroutines</a></li>
 
 ## License
-# --------
 Copyright 2021 Metehan Barutcu.
 
     Licensed under the Apache License, Version 2.0 (the "License");
