@@ -12,7 +12,6 @@ import com.H5190019.ibrahim_metehan_barutcu.data.model.UserResponseItem
 import com.H5190019.ibrahim_metehan_barutcu.databinding.ActivityLoginBinding
 import com.H5190019.ibrahim_metehan_barutcu.ui.category.CategoryActivity
 
-
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
@@ -61,12 +60,12 @@ class LoginActivity : AppCompatActivity() {
                 var password = edtPassword.text.toString()
 
                 if (email.isEmpty()) {
-                    edtEmail.setError("Bu alan boş bırakılamaz!")
+                    edtEmail.setError(getString(R.string.empty_control))
                     edtEmail.requestFocus()
                     return@OnClickListener
                 }
                 if (password.isEmpty()) {
-                    edtPassword.setError("Bu alan boş bırakılamaz!")
+                    edtPassword.setError(getString(R.string.empty_control))
                     edtPassword.requestFocus()
                     return@OnClickListener
                 }
